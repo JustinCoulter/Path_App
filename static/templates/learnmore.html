@@ -1,0 +1,579 @@
+{% extends 'base.html' %}
+{% block learnmore_link %}{% endblock %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+
+
+<!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+
+    <br><br><div class="intro-text"></br></br>
+      <!-- <h2>The Path App</h2> -->
+      <p>Organize anything</p>
+      <p></p>
+      <a href="#call-to-action" class="btn-get-started scrollto">Start Your Path</a>
+    </div>
+
+    <!-- <div class="product-screens">
+
+      <div class="product-screen-1 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.6s">
+        <img src="../static/img/product-screen-1.png" alt="">
+      </div>
+
+      <div class="product-screen-2 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
+        <img src="../static/img/product-screen-2.png" alt="">
+      </div>
+
+      <div class="product-screen-3 wow fadeInUp" data-wow-duration="0.6s">
+        <img src="../static/img/product-screen-3.png" alt="">
+      </div>
+
+    </div> -->
+
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!-- ==========================
+      Product Advanced Featuress Section
+    ============================-->
+    <section id="advanced-features">
+
+      <div class="features-row section-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <img class="advanced-feature-img-right wow fadeInRight" src="../static/img/advanced-feature-1.jpg" alt="">
+              <div class="wow fadeInLeft">
+                <i class="ion-ios-paper-outline" class="wow fadeInRight" data-wow-duration="0.5s"></i>
+                <br><h2>Create your path</h2></br>
+                    <p><li>Click on "Start Your Path"</li>
+                    <li>Post your (editable) opportunity question for the path</li>
+                    <li>Start your list of benefits</li>
+                    <li>Start your list of knowns</li>
+                    <li>Start your list of path questions</li>
+                    <li>Sequence your path questions</li>
+                    <li>Post your path momentum</li></p>
+                <!-- <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <img class="advanced-feature-img-left" src="../static/img/advanced-feature-2.jpg" alt="">
+              <div class="wow fadeInRight">
+                <i class="ion-ios-paper-outline" class="wow fadeInRight" data-wow-duration="0.5s"></i>
+                <br><h2>Work your path</h2></br>
+                    <p><li>When you're ready to work on your most important path questions, move these cards to the actions list</li>
+                    <li>On the back on these cards, post the actions you will take to answer each question on the actions list</li>
+                    <li>As you begin to get answers to each question, move that question card to the answers list</li>
+                    <li>As you get answers from your actions, post these answers on the answers list</li>
+                    <li>As you move along your path, keep updating your knowns, path questions, actions, and answers lists</li>
+                    <li>Update your opportunity question if and when it seems useful to do so</li></p>
+                <!-- <i class="ion-ios-paper-outline" class="wow fadeInRight" data-wow-duration="0.5s"></i>
+                <p class="wow fadeInRight" data-wow-duration="0.5s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <i class="ion-ios-color-filter-outline wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s"></i>
+                <p class="wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                <i class="ion-ios-barcode-outline wow fadeInRight" data-wow-delay="0.4" data-wow-duration="0.5s"></i>
+                <p class="wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="0.5s">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-row section-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <img class="advanced-feature-img-right wow fadeInRight" src="../static/img/advanced-feature-3.jpg" alt="">
+              <div class="wow fadeInLeft">
+                <i class="ion-ios-paper-outline" class="wow fadeInRight" data-wow-duration="0.5s"></i>
+                <br><h2>A Path Method Glossary</h2></br>
+                    <p><li><b>Actions:</b> anything you will do (visualize, ask, search, try, and so on) to answer a path question</li>
+                    <li><b>Answers:</b> anything you discover, learn, and accomplish from any actions along a path</li>
+                    <li><b>Benefits:</b> the potential tangible and intangible, long and short term, self and other serving advantages of working on your opportunity question</li>
+                    <li><b>Knowns:</b> anything that is true, fact, confirmed, researched, decided</li>
+                    <li><b>Opportunity question:</b> a "How can I..." question used to organize a path</li>
+                    <li><b>Path:</b> a responsive sequence of questions used to organize any kind of uncertainty</li>
+                    <li><b>Path questions:</b> any kinds of questions that represent actionable unknowns on a path</li>
+                    <li><b>Sequence:</b> the order in which you will work on path questions; the most important (unanswered) path questions are always at the top</li></p>
+                <!-- <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <i class="ion-ios-albums-outline"></i>
+                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #advanced-features -->
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <!-- <section id="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Start a Path</h3>
+            <p class="cta-text"> Whatever kind of uncertainty you want to organize, get started on your Path today.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Let's go!</a>
+          </div>
+        </div>
+
+      </div>
+    </section>#call-to-action -->
+
+    <!--==========================
+      More Features Section
+    ============================-->
+    <!-- <section id="more-features" class="section-bg">
+      <div class="container">
+
+        <div class="section-header">
+          <h3 class="section-title">Why it works</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
+        <!-- </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft">
+              <div class="icon"><i class="ion-ios-stopwatch-outline"></i></div>
+              <h4 class="title"><a href="">It keeps us aligned with reality</a></h4>
+              <p class="description">Unlike goals and plans that fail 92% of the time because they're assumption-based, A Path Method works because it keeps us continuously realistic.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight">
+              <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+              <h4 class="title"><a href="">It turns uncertainty to an asset</a></h4>
+              <p class="description">Working from question-based paths transforms uncertainty from stress-inducing obstacle to direction-inspiring asset.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight">
+              <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+              <h4 class="title"><a href="">It engages our strengths</a></h4>
+              <p class="description">A Path Method engages the chemistry of our strengths in a growth-mindset that makes our weaknesses irrelevant.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft">
+              <div class="icon"><i class="ion-ios-heart-outline"></i></div>
+              <h4 class="title"><a href="">It's evidence-based</a></h4>
+              <p class="description">The process is based on the latest science, research, and practices, highlighted in the book: "Path: The Art of Organizing Uncertainty."</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>#more-features -->
+
+    <!--==========================
+      Clients
+    ============================-->
+    <!-- <section id="clients"> -->
+      <!-- <div class="container">
+
+        <div class="row wow fadeInUp"> -->
+
+          <!-- <div class="col-md-2">
+            <img src="img/clients/client-1.png" alt="">
+          </div>
+
+          <div class="col-md-2">
+            <img src="img/clients/client-2.png" alt="">
+          </div>
+
+          <div class="col-md-2">
+            <img src="img/clients/client-3.png" alt="">
+          </div>
+
+          <div class="col-md-2">
+            <img src="img/clients/client-4.png" alt="">
+          </div>
+
+          <div class="col-md-2">
+            <img src="img/clients/client-5.png" alt="">
+          </div>
+
+          <div class="col-md-2">
+            <img src="img/clients/client-6.png" alt="">
+          </div>
+
+        </div>
+      </div>
+    </section> -->
+    <!-- #more-features -->
+
+    <!--==========================
+      Pricing Section
+    ============================-->
+    <!-- <section id="pricing" class="section-bg">
+      <div class="container">
+
+        <div class="section-header">
+          <h3 class="section-title">Pricing</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box wow fadeInLeft">
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> month</span></h4>
+              <ul>
+                <li><i class="ion-android-checkmark-circle"></i> Quam adipiscing vitae proin</li>
+                <li><i class="ion-android-checkmark-circle"></i> Nec feugiat nisl pretium</li>
+                <li><i class="ion-android-checkmark-circle"></i> Nulla at volutpat diam uteera</li>
+                <li><i class="ion-android-checkmark-circle"></i> Pharetra massa massa ultricies</li>
+                <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>
+              </ul>
+              <a href="#" class="get-started-btn">Get Started</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box featured wow fadeInUp">
+              <h3>Business</h3>
+              <h4><sup>$</sup>29<span> month</span></h4>
+              <ul>
+                <li><i class="ion-android-checkmark-circle"></i> Quam adipiscing vitae proin</li>
+                <li><i class="ion-android-checkmark-circle"></i> Nec feugiat nisl pretium</li>
+                <li><i class="ion-android-checkmark-circle"></i> Nulla at volutpat diam uteera</li>
+                <li><i class="ion-android-checkmark-circle"></i> Pharetra massa massa ultricies</li>
+                <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>
+              </ul>
+              <a href="#" class="get-started-btn">Get Started</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box wow fadeInRight">
+              <h3>Developer</h3>
+              <h4><sup>$</sup>49<span> month</span></h4>
+              <ul>
+                <li><i class="ion-android-checkmark-circle"></i> Quam adipiscing vitae proin</li>
+                <li><i class="ion-android-checkmark-circle"></i> Nec feugiat nisl pretium</li>
+                <li><i class="ion-android-checkmark-circle"></i> Nulla at volutpat diam uteera</li>
+                <li><i class="ion-android-checkmark-circle"></i> Pharetra massa massa ultricies</li>
+                <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>
+              </ul>
+              <a href="#" class="get-started-btn">Get Started</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>#pricing -->
+
+
+    <!--==========================
+      Frequently Asked Questions Section
+    ============================-->
+    <!-- <section id="faq">
+      <div class="container">
+
+        <div class="section-header">
+          <h3 class="section-title">Frequently Asked Questions</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">How to make the most of the Method</p>
+        </div>
+
+        <ul id="faq-list" class="wow fadeInUp">
+          <li>
+            <a data-toggle="collapse" class="collapsed" href="#faq1">Can it really be used with anything? <i class="ion-android-remove"></i></a>
+            <div id="faq1" class="collapse" data-parent="#faq-list">
+              <p>
+                Yes, it works easily with any kind of challenge including any kind of: tranisition, adjustment, crisis, chaos, dream, dilemma, or learning curve. 
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq2" class="collapsed">Why don't goals and plans work? <i class="ion-android-remove"></i></a>
+            <div id="faq2" class="collapse" data-parent="#faq-list">
+              <p>
+                They don't work because they are based on assumptions that keep us continuously unrealistic. Being unrealistic causes us to spin our wheels without return.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq3" class="collapsed">What keeps us focused and energized?<i class="ion-android-remove"></i></a>
+            <div id="faq3" class="collapse" data-parent="#faq-list">
+              <p>
+                All it takes to keep focused and energized in any kind of uncertainty is working from the right questions. Paths are responsive and actionable sequeneces of right questions.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq4" class="collapsed">How long does it take to learn the process? <i class="ion-android-remove"></i></a>
+            <div id="faq4" class="collapse" data-parent="#faq-list">
+              <p>
+                All it takes is going through it once. The process is easy and intuitive and can be applied to anything focused on the immediate present or long term future.
+              </p>
+            </div>
+          </li> -->
+
+          <!-- <li>
+            <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="ion-android-remove"></i></a>
+            <div id="faq5" class="collapse" data-parent="#faq-list">
+              <p>
+                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="ion-android-remove"></i></a>
+            <div id="faq6" class="collapse" data-parent="#faq-list">
+              <p>
+                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+              </p>
+            </div>
+          </li> -->
+
+        <!-- </ul>
+
+      </div>
+    </section>#faq -->
+
+    <!--==========================
+      Our Team Section
+    ============================-->
+    <!-- <section id="team" class="section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Our Team</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row wow fadeInUp">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team/team-1.jpg" alt=""></div>
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team/team-2.jpg" alt=""></div>
+              <h4>Sarah Jhinson</h4>
+              <span>Product Manager</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team/team-3.jpg" alt=""></div>
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team/team-4.jpg" alt=""></div>
+              <h4>Amanda Jepson</h4>
+              <span>Accountant</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section> #team -->
+
+    <!--==========================
+      Gallery Section
+    ============================-->
+    <!-- <section id="gallery">
+      <div class="container-fluid">
+        <div class="section-header">
+          <h3 class="section-title">Gallery</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item wow fadeInUp">
+              <a href="img/gallery/gallery-1.jpg" class="gallery-popup">
+                <img src="img/gallery/gallery-1.jpg" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item wow fadeInUp">
+              <a href="img/gallery/gallery-2.jpg" class="gallery-popup">
+                <img src="img/gallery/gallery-2.jpg" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item wow fadeInUp">
+              <a href="img/gallery/gallery-3.jpg" class="gallery-popup">
+                <img src="img/gallery/gallery-3.jpg" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item wow fadeInUp">
+              <a href="img/gallery/gallery-4.jpg" class="gallery-popup">
+                <img src="img/gallery/gallery-4.jpg" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item wow fadeInUp">
+              <a href="img/gallery/gallery-5.jpg" class="gallery-popup">
+                <img src="img/gallery/gallery-5.jpg" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item wow fadeInUp">
+              <a href="img/gallery/gallery-6.jpg" class="gallery-popup">
+                <img src="img/gallery/gallery-6.jpg" alt="">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- #gallery -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <!-- <section id="contact">
+      <div class="container">
+        <div class="row wow fadeInUp">
+
+          <div class="col-lg-4 col-md-4">
+            <div class="contact-about">
+              <h3>Path</h3>
+              <p>Make the impossible possible.</p>
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="info">
+              <div>
+                <i class="ion-ios-location-outline"></i>
+                <p>1020 Kenilworth Avenue<br>Cleveland OH 44113</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-email-outline"></i>
+                <p>jack@nuanceworks.com</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-telephone-outline"></i>
+                <p>+1 216.233.8622</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-row">
+                  <div class="form-group col-lg-6">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group col-lg-6">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>#contact -->
+
+  </main>
+
+
+{% endblock %}

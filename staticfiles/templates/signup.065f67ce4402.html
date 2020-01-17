@@ -1,0 +1,79 @@
+{% extends "./base.html" %}
+{% load crispy_forms_tags %}
+{% block body %}
+{% load static %}
+
+<main id="register" class="site-main bg-light">
+  <!-- <div class="page-title background-page">
+        <div class="container">
+            <h1>Register</h1>
+        </div>
+    </div> -->
+  <div class="container small-top-margin">
+    <div class="main-content">
+      <div class="row">
+        <div class="col-md-2">
+        </div>
+
+
+        <div class="form-login form-register col-md-6">
+          <h1>Welcome to BOOYA!</h1>
+          <h4>Finish your profile to create a content hub and start getting discovered.</h4>
+
+          <form method="post" id="registerForm" action="/signup/" novalidate="">
+            {% csrf_token %}
+
+
+            <fieldset class="form-group">
+
+
+
+              <div class="form-row my-4">
+
+                <div class="form-group col-md-12 mb-0">
+                  <label> Email Address  </label>
+                  {{ user_form.username }}
+                </div>
+              </div>
+
+              <div class="col-md-12 my-4" style="padding:0px;">
+                {{ profile_form.user_type| as_crispy_field }}
+              </div>
+              <div class="form-row my-4">
+                <div class="form-group col-md-6 mb-0">
+                  {{ user_form.password1 | as_crispy_field }}
+                </div>
+                <div class="form-group col-md-6 mb-0">
+                  {{ user_form.password2 | as_crispy_field }}
+
+                </div>
+              </div>
+
+
+            </fieldset>
+            {% if profile_form.errors or user_form.errors or profile_form.non_field_errors or user_form.non_field_errors %}
+            <div class="error-message-block" style="color:red;">Oops! Something went wrong while submitting the form.
+              {{ user_form.non_field_errors }}
+              {{ profile_form.non_field_errors }}
+              {{ user_form.errors}}
+              {{ profile_form.errors}}
+            </div>
+            {% endif %}
+
+            <div class="form-group">
+              <button class="btn btn-outline-info" type="submit">Sign up</button>
+            </div>
+          </form>
+          <div class="border-top pt-3" style="padding-bottom:80px;">
+            <div class="text-muted">Already have an account?<br><a href="/login">Log In</a></div>
+
+          </div>
+        </div>
+        <div class="col-md-2">
+        </div>
+      </div>
+    </div>
+  </div>
+</main><!-- .site-main -->
+
+{% endblock %}
